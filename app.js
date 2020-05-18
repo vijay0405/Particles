@@ -13,9 +13,9 @@ function setup() {
 
 function draw() {
     
-    // var random = Math.floor(Math.random() * colors.length);
+    var random = Math.floor(Math.random() * colors.length);
 
-    background(0);
+    background(colors[random]);
 
     particles.forEach((particle, idx) => {
 		particle.update();
